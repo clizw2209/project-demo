@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高德地图美化展示</title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=e76d6a5597674b0cf7a0b5dbc135c6a9"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #container {
+            height: calc(100% - 50px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            margin: 10px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/static/css/animate.min.css">
+
+<link rel="stylesheet" href="/static/fonts/flaticon.css">
+
+<link rel="stylesheet" href="/static/css/boxicons.min.css">
+
+<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+<link rel="stylesheet" href="/static/css/nice-select.min.css">
+
+<link rel="stylesheet" href="/static/css/meanmenu.css">
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+<link rel="stylesheet" href="/static/css/responsive.css">
+
+<title>Onvi - Technology & IT Solution HTML Template</title>
+
+<link rel="icon" type="image/png" href="/static/images/favicon.png">
+</head>
+<body>
+
+<div class="preloader">
+<div class="d-table">
+<div class="d-table-cell">
+<div class="spinner">
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="top-header top-header-bg">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-9">
+<div class="header-left">
+<div class="header-left-card">
+<ul>
+<li>
+<i class='bx bx-time'></i>
+SUN - THU
+<span>8:00 AM - 9:00 PM</span>
+</li>
+<li>
+<i class='bx bx-map'></i>
+OFFICE
+<span>3460 Grove Avenue</span>
+</li>
+<li>
+<i class='bx bx-phone-call'></i>
+CALL
+<span><a href="">+ (103) 222 3333</a></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="top-right">
+<div class="language-list">
+<select class="language-list-item">
+<option>English</option>
+<option>العربيّة</option>
+<option>Deutsch</option>
+<option>Português</option>
+<option>简体中文</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="navbar-area">
+
+<div class="mobile-nav">
+<a href="index.html" class="logo">
+<img src="/static/images/logos/logo-1.png" alt="Logo">
+</a>
+</div>
+
+<div class="main-nav main-nav-bottom">
+<div class="container">
+<nav class="navbar navbar-expand-md navbar-light ">
+<a class="navbar-brand" href="index.html">
+<img src="/static/images/logos/logo-1.png" alt="Logo">
+</a>
+<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+<ul class="navbar-nav m-auto">
+<li class="nav-item">
+<a href="#" class="nav-link">
+Home
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="index.html" class="nav-link">
+Home One
+</a>
+</li>
+<li class="nav-item">
+<a href="index-2.html" class="nav-link">
+Home Two
+</a>
+</li>
+<li class="nav-item">
+<a href="index.html" class="nav-link">
+Home Three
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="about.html" class="nav-link">
+About Us
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link active">
+Pages
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="#" class="nav-link">
+Shop
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="shop.html" class="nav-link">
+Shop
+</a>
+</li>
+<li class="nav-item">
+<a href="shop-details.html" class="nav-link">
+Shop Details
+</a>
+</li>
+<li class="nav-item">
+<a href="cart.html" class="nav-link">
+Cart
+</a>
+ </li>
+<li class="nav-item">
+<a href="checkout.html" class="nav-link">
+Checkout
+</a>
+</li>
+<li class="nav-item">
+<a href="wishlist.html" class="nav-link">
+Wishlist
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="author.html" class="nav-link">
+Author
+</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">
+Testimonials
+</a>
+</li>
+<li class="nav-item">
+<a href="team.html" class="nav-link">
+Team
+</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">
+FAQ
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+User
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="login.html" class="nav-link">
+Log In
+</a>
+</li>
+<li class="nav-item">
+<a href="register.html" class="nav-link">
+Register
+</a>
+</li>
+<li class="nav-item">
+<a href="forget-password.html" class="nav-link">
+Forget Password
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="terms-condition.html" class="nav-link">
+Terms & Conditions
+</a>
+</li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">
+Privacy Policy
+ </a>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link active">
+404 page
+</a>
+</li>
+<li class="nav-item">
+<a href="coming-soon.html" class="nav-link">
+Coming Soon
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Services
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="services-1.html" class="nav-link">
+Services Grid
+</a>
+</li>
+<li class="nav-item">
+<a href="services-2.html" class="nav-link">
+Services Style One
+</a>
+</li>
+<li class="nav-item">
+<a href="services-3.html" class="nav-link">
+Services Style Two
+</a>
+</li>
+<li class="nav-item">
+<a href="services-details.html" class="nav-link">
+Services Details
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog
+<i class='bx bx-chevron-down'></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-1.html" class="nav-link">
+Blog Grid
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-2.html" class="nav-link">
+Blog Left Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-3.html" class="nav-link">
+Blog Right Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-details1.html" class="nav-link">
+Blog Details
+</a>
+</li>
+</ul>
+ </li>
+<li class="nav-item">
+<a href="contact.html" class="nav-link">
+Contact Us
+</a>
+</li>
+</ul>
+<div class="nav-bar-side">
+<a href="shop-details.html" class="shoping-nav-btn-3">
+<i class="flaticon-shopping-bag"></i>
+<span>0</span>
+</a>
+<div class="nav-btn">
+<a href="contact.html" class="default-btn-three">Free quote</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="side-nav-responsive">
+<div class="container-max">
+<div class="dot-menu">
+<div class="circle-inner">
+<div class="circle circle-one"></div>
+<div class="circle circle-two"></div>
+<div class="circle circle-three"></div>
+</div>
+</div>
+<div class="container">
+<div class="side-nav-inner">
+<div class="side-nav justify-content-center align-items-center">
+<div class="side-nav-item">
+<a href="contact.html" class="shoping-nav-btn">
+<i class="flaticon-shopping-bag"></i>
+<span>0</span>
+</a>
+</div>
+<div class="side-nav-item">
+<a href="contact.html" class="default-btn-two">Free quote</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="inner-banner">
+<div class="container">
+<div class="inner-title text-center">
+<h3>地图服务</h3>
+<ul>
+<li>
+</ul>
+</div>
+</div>
+<div class="inner-line">
+<div class="line1"></div>
+<div class="line2"></div>
+</div>
+</div>
+
+
+ <div id="container"></div>
+
+    <script>
+        // 创建地图实例
+        var map = new AMap.Map('container', {
+            zoom: 11,
+            center: [116.397428, 39.90923],
+            viewMode: '3D',
+            // 使用自定义地图样式，这里使用清新蓝风格
+            mapStyle: 'amap://styles/lightblue',
+            pitch: 75, // 地图俯仰角度
+            rotateEnable: true // 允许地图旋转
+        });
+
+        // 添加缩放控件
+        var zoomControl = new AMap.ZoomControl({
+            position: 'LB' // 左下角位置
+        });
+        map.addControl(zoomControl);
+
+        // 添加比例尺控件
+        var scale = new AMap.Scale();
+        map.addControl(scale);
+
+        // 添加地图鹰眼控件
+        var overView = new AMap.OverView({
+            visible: true
+        });
+        map.addControl(overView);
+
+        // 添加一个标记点
+        var marker = new AMap.Marker({
+            position: [116.397428, 39.90923],
+            title: '标记点',
+            // 自定义标记点图标
+            icon: new AMap.Icon({
+                size: new AMap.Size(36, 36),
+                image: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png',
+                imageOffset: new AMap.Pixel(0, 0)
+            })
+        });
+        marker.setMap(map);
+
+        // 为标记点添加鼠标悬停提示信息
+        marker.on('mouseover', function () {
+            marker.setTitle('这是一个标记点');
+        });
+        marker.on('mouseout', function () {
+            marker.setTitle('标记点');
+        });
+    </script>
+
+<footer class="footer-area footer-bg pt-100 pb-70">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-widget">
+<div class="footer-logo">
+<a href="index.html">
+<img src="/static/images/logos/logo-1.png" alt="Images">
+</a>
+ </div>
+<p>
+Lorem ipsum dolor sit amet, conse tempor invidunt ut labore et dolore eos et accusam et justo.
+</p>
+<ul class="social-footer-link">
+<li>
+<a href="https://www.facebook.com/" target="_blank">
+<i class='bx bxl-facebook'></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/" target="_blank">
+<i class='bx bxl-linkedin'></i>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/" target="_blank">
+<i class='bx bxl-twitter'></i>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/" target="_blank">
+<i class='bx bxl-instagram'></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6">
+<div class="footer-widget ps-2">
+<h3>Quick Links</h3>
+<ul class="footer-list">
+<li>
+<a href="index.html" target="_blank">
+Home
+</a>
+</li>
+<li>
+<a href="services-1.html" target="_blank">
+Services
+</a>
+</li>
+<li>
+<a href="shop.html" target="_blank">
+Our shop
+</a>
+</li>
+<li>
+<a href="blog-details1.html" target="_blank">
+Blog details
+</a>
+</li>
+<li>
+<a href="cart.html" target="_blank">
+Add to cart
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6">
+<div class="footer-widget ps-2">
+<h3>More</h3>
+<ul class="footer-list">
+<li>
+<a href="contact.html" target="_blank">
+Contact us
+</a>
+</li>
+<li>
+<a href="about.html" target="_blank">
+About us
+</a>
+</li>
+<li>
+<a href="privacy-policy.html" target="_blank">
+Privacy policy
+</a>
+</li>
+<li>
+<a href="terms-condition.html" target="_blank">
+ Terms & condition
+</a>
+</li>
+<li>
+<a href="login.html" target="_blank">
+Log in
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6">
+<div class="footer-widget ps-2">
+<h3>Services</h3>
+<ul class="footer-list">
+<li>
+<a href="services-details.html" target="_blank">
+Product design
+</a>
+</li>
+<li>
+<a href="services-details.html" target="_blank">
+IT management
+</a>
+</li>
+<li>
+<a href="services-details.html" target="_blank">
+Web designing
+</a>
+</li>
+<li>
+<a href="terms-condition.html" target="_blank">
+Terms & condition
+</a>
+</li>
+<li>
+<a href="register.html" target="_blank">
+Register
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-12">
+<div class="footer-widget ps-2">
+<h3>Project Gallery</h3>
+<ul class="footer-gallery">
+<li>
+<a href="/static/images/footer-gallery/footer-gallery1.jpg">
+<img src="/static/images/footer-gallery/footer-gallery1.jpg" alt="image">
+</a>
+</li>
+<li>
+<a href="/static/images/footer-gallery/footer-gallery2.jpg">
+<img src="/static/images/footer-gallery/footer-gallery2.jpg" alt="image">
+</a>
+</li>
+<li>
+<a href="/static/images/footer-gallery/footer-gallery3.jpg">
+<img src="/static/images/footer-gallery/footer-gallery3.jpg" alt="image">
+</a>
+</li>
+<li>
+<a href="/static/images/footer-gallery/footer-gallery4.jpg">
+<img src="/static/images/footer-gallery/footer-gallery4.jpg" alt="image">
+</a>
+</li>
+<li>
+<a href="/static/images/footer-gallery/footer-gallery5.jpg">
+<img src="/static/images/footer-gallery/footer-gallery5.jpg" alt="image">
+</a>
+</li>
+<li>
+<a href="/static/images/footer-gallery/footer-gallery6.jpg">
+<img src="/static/images/footer-gallery/footer-gallery6.jpg" alt="image">
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="copy-right-area copy-right-bg copy-right-border">
+<div class="container">
+<div class="copy-right-text">
+<p>
+Copyright ©2021 Onvi. All Rights Reserved by
+<a href="http://www.bootstrapmb.com" target="_blank">HiBootstrap</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/carousel-thumbs.js"></script>
+
+<script src="/static/js/jquery.nice-select.min.js"></script>
+
+<script src="/static/js/wow.min.js"></script>
+
+<script src="/static/js/meanmenu.js"></script>
+
+<script src="/static/js/jquery-ui.min.js"></script>
+
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+
+<script src="/static/js/mixitup.min.js"></script>
+
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="/static/js/form-validator.min.js"></script>
+
+<script src="/static/js/contact-form-script.js"></script>
+
+<script src="/static/js/custom.js"></script>
+</body>
+</html>
